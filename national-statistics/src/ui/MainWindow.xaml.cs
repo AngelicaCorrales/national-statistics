@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using national_statistics.src.model;
 
 namespace national_statistics
 {
@@ -20,9 +21,13 @@ namespace national_statistics
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Relationships
+        private NationalStatistics nationalS;
+
         public MainWindow()
         {
             InitializeComponent();
+            nationalS = new NationalStatistics();
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
