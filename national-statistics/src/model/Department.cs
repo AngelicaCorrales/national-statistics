@@ -33,5 +33,18 @@ namespace national_statistics.src.model
         {
             return municipalities;
         }
+
+        public Boolean foundMunicipality(string code)
+        {
+            Boolean result = false;
+            for(int i = 0; i < municipalities.Count; i++)
+            {
+                if(municipalities.ElementAt(i).getCode().Equals(code))
+                {
+                    result = true;  
+                }
+            }
+            return result;
+        }
     }
 }
