@@ -12,8 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using LiveCharts;
-using LiveCharts.Wpf;
 using national_statistics.src.model;
 
 namespace national_statistics
@@ -37,7 +35,7 @@ namespace national_statistics
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonCreateGraphic_Click(object sender, RoutedEventArgs e)
         {
 
         }
@@ -56,6 +54,17 @@ namespace national_statistics
             }
             pieChart.Series = series;
 
+        }
+
+        private void ButtonImportData_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog d = new OpenFileDialog();
+            d.Title = "Import Data";
+            d.Filter = "CVS files |*.cvs;";
+            if(d.ShowDialog() == true && d.CheckFileExists == true)
+            {
+                nationalS.importFile(d.FileName);
+            }
         }
     }
 }
