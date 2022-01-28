@@ -17,6 +17,8 @@ namespace national_statistics.src.model
             departments = new List<Department>();
         }
 
+        public List<Department> Departments { get { } }
+
         public importFile()
         {
             
