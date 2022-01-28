@@ -1,5 +1,5 @@
 ﻿national-statistics
-1.0.0.0
+
 
 winexe
 C#
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\keren\source\repos\national-statistics\national-statistics\App.xaml
-1605191057
+11407045341
 
-6427332818
+3-1233169557
 1941142463650
-src\ui\MainWindow.xaml;
+MainWindow.xaml;
 
-True
+False
 
