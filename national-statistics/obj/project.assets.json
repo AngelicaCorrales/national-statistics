@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\keren\\.nuget\\packages\\": {}
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\keren\\source\\repos\\national-statistics\\national-statistics\\national-statistics.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\OneDrive - Universidad Icesi (@icesi.edu.co)\\5 SEMESTRE\\PROYECTO INTEGRADOR 1\\Proyects\\national-statistics\\national-statistics\\national-statistics.csproj",
       "projectName": "national-statistics",
-      "projectPath": "C:\\Users\\keren\\source\\repos\\national-statistics\\national-statistics\\national-statistics.csproj",
-      "packagesPath": "C:\\Users\\keren\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\keren\\source\\repos\\national-statistics\\national-statistics\\obj\\",
+      "projectPath": "C:\\Users\\USUARIO\\OneDrive - Universidad Icesi (@icesi.edu.co)\\5 SEMESTRE\\PROYECTO INTEGRADOR 1\\Proyects\\national-statistics\\national-statistics\\national-statistics.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\OneDrive - Universidad Icesi (@icesi.edu.co)\\5 SEMESTRE\\PROYECTO INTEGRADOR 1\\Proyects\\national-statistics\\national-statistics\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\keren\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
