@@ -1,8 +1,32 @@
 {
   "version": 2,
-  "dgSpecHash": "CY8/i7akqxV+KYzT+79CuhZGdbEcaRTq/2YGSnjPh6sa0Ncw6iBOvi7375PNgCq+5lo/lTOc+2GL4rAjd8wexQ==",
+  "dgSpecHash": "YEd5pyfYGTAzscMwFPToIanrkVujcyBT8JNcS1uwF6ZMRAKT3f2ddtzPdKMnPipkLNAFBsEOfCyol5qxhkBiXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\USUARIO\\OneDrive - Universidad Icesi (@icesi.edu.co)\\5 SEMESTRE\\PROYECTO INTEGRADOR 1\\Proyects\\national-statistics\\national-statistics\\national-statistics.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"LiveCharts 0.9.7\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "LiveCharts",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"LiveCharts.Wpf 0.9.7\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
