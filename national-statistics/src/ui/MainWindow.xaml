@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:national_statistics"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
         Title="National statistics" Height="450" Width="800">
     <Grid RenderTransformOrigin="0.499,0.495">
@@ -27,7 +28,7 @@
                 </DataGrid.Style>
             </DataGrid>
             <ComboBox HorizontalAlignment="Left" Margin="233,9,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.509,0.498"/>
-            <Button Content="Importar datos" HorizontalAlignment="Left" Margin="42,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.208,-0.136" Click="ButtonImportData_Click"/>
+            <Button Content="Importar datos" HorizontalAlignment="Left" Margin="42,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.208,-0.136"/>
             <Canvas Grid.Column="1" Margin="20,50,20,20"/>
         </Grid>
 

@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Microsoft.Win32;
 using national_statistics.src.model;
 
 namespace national_statistics
@@ -38,6 +37,22 @@ namespace national_statistics
 
         private void ButtonCreateGraphic_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        public void createGraphic()
+        {
+            SeriesCollection series = new();
+            foreach (Department dep in nationalS.Departments)
+            {
+                series.Add(new PieSeries()
+                {
+                    Title = dep.getName(),
+                    Values = new ChartValues<int> { dep.getMunicipalities().Count },
+                    DataLabels = true,
+                });
+            }
+            pieChart.Series = series;
 
         }
 

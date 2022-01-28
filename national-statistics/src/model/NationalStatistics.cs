@@ -21,25 +21,9 @@ namespace national_statistics.src.model
             departments = new List<Department>();
         }
 
-        public void importFile(string fileName)
+        public importFile()
         {
-            using(StreamReader rd = new StreamReader(fileName))
-            {
-                rd.ReadLine();
-                while (!rd.EndOfStream)
-                {
-                    string[] parts = rd.ReadLine().Split(SEPARATOR);
-                    if (!foundDepartment(parts[0]))
-                    {
-                        departments.Add(new Department(parts[0], parts[2]));
-                        if (!departments.Last().foundMunicipality(parts[1]))
-                        {
-                            departments.Last().getMunicipalities().Add(new Municipality(parts[1], parts[3], parts[4]));
-                        } 
-                    }
-                }
-
-            }
+            
         }
 
         private Boolean foundDepartment(string code)
