@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LiveCharts;
+using LiveCharts.Wpf;
+using Microsoft.Win32;
 using national_statistics.src.model;
 
 namespace national_statistics
@@ -43,7 +46,7 @@ namespace national_statistics
         public void createGraphic()
         {
             SeriesCollection series = new();
-            foreach (Department dep in nationalS.Departments)
+            foreach (Department dep in nationalS.getDepartments())
             {
                 series.Add(new PieSeries()
                 {
