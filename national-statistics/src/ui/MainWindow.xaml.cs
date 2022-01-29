@@ -39,10 +39,7 @@ namespace national_statistics
 
         }
 
-        private void ButtonCreateGraphic_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
 
         public void createGraphic()
         {
@@ -56,7 +53,7 @@ namespace national_statistics
                     DataLabels = true,
                 });
             }
-            //pieChart.Series = series;
+            pieChart.Series = series;
 
         }
 
@@ -70,6 +67,8 @@ namespace national_statistics
                 nationalS.importFile(d.FileName);
                 DataTable dt = nationalS.fillTable();
                 dataGrid.ItemsSource = dt.DefaultView;
+
+                createGraphic();
             }
         }
     }
