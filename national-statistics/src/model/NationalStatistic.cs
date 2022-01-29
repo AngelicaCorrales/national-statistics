@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -95,7 +96,23 @@ namespace national_statistics.src.model
             return results;
         }
 
-
+        public DataTable fillTable()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Codigo del Dept.");
+            dt.Columns.Add("Codigo del Municipio");
+            dt.Columns.Add("Nombre del Dept.");
+            dt.Columns.Add("Nombre del Municipio");
+            dt.Columns.Add("Tipo");
+            foreach(Department department in departments)
+            {
+                for (int i = 0;i < department.getMunicipalities().Count; i++)
+                {
+                    dt.Rows.Add(department.getCode(), department.getMunicipalities().ElementAt(i).getCode(), department.getName(), department.getMunicipalities().ElementAt(i).getName(), department.getMunicipalities().ElementAt(i).getType());
+                } 
+            }
+            return dt;
+        }
 
     }
 }
