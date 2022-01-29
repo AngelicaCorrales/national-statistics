@@ -22,13 +22,13 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Button Content="Crear gráfico" HorizontalAlignment="Center" Margin="0,11,0,0" VerticalAlignment="Top" Click="ButtonCreateGraphic_Click" Grid.Column="1"/>
-            <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged" Margin="20,50,20,20">
+            <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged" Margin="20,50,20,20">
                 <DataGrid.Style>
                     <Style/>
                 </DataGrid.Style>
             </DataGrid>
             <ComboBox HorizontalAlignment="Left" Margin="233,9,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.509,0.498"/>
-            <Button Content="Importar datos" HorizontalAlignment="Left" Margin="42,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.208,-0.136"/>
+            <Button Content="Importar datos" HorizontalAlignment="Left" Margin="42,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.208,-0.136" Click="ButtonImportData_Click"/>
             <Canvas Grid.Column="1" Margin="20,50,20,20">
               
             </Canvas>

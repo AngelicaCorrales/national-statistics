@@ -16,6 +16,7 @@ using Microsoft.Win32;
 using LiveCharts;
 using LiveCharts.Wpf;
 using national_statistics.src.model;
+using System.Data;
 
 namespace national_statistics
 {
@@ -63,10 +64,13 @@ namespace national_statistics
         {
             OpenFileDialog d = new OpenFileDialog();
             d.Title = "Import Data";
-            d.Filter = "CVS files |*.cvs;";
+            d.Filter = "CSV files | *.csv;";
             if(d.ShowDialog() == true && d.CheckFileExists == true)
             {
                 nationalS.importFile(d.FileName);
+                DataTable dt = new DataTable();
+                dt = nationalS.fillTable();
+                dataGrid.ItemsSource = dt.DefaultView;
             }
         }
     }
