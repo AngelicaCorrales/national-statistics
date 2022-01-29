@@ -21,3 +21,27 @@ C:\Users\keren\source\repos\national-statistics\national-statistics\obj\Debug\ne
 C:\Users\keren\source\repos\national-statistics\national-statistics\obj\Debug\net6.0-windows\ref\national-statistics.dll
 C:\Users\keren\source\repos\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.pdb
 C:\Users\keren\source\repos\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.genruntimeconfig.cache
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\bin\Debug\net6.0-windows\national-statistics.exe
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\bin\Debug\net6.0-windows\national-statistics.deps.json
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\bin\Debug\net6.0-windows\national-statistics.runtimeconfig.json
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\bin\Debug\net6.0-windows\national-statistics.dll
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\bin\Debug\net6.0-windows\ref\national-statistics.dll
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\bin\Debug\net6.0-windows\national-statistics.pdb
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.csproj.AssemblyReference.cache
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\src\ui\MainWindow.g.cs
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics_MarkupCompile.cache
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics_MarkupCompile.lref
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\src\ui\MainWindow.baml
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.g.resources
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.AssemblyInfoInputs.cache
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.AssemblyInfo.cs
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.csproj.CopyComplete
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.dll
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\ref\national-statistics.dll
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.pdb
+C:\Users\USUARIO\OneDrive - Universidad Icesi (@icesi.edu.co)\5 SEMESTRE\PROYECTO INTEGRADOR 1\Proyects\national-statistics\national-statistics\obj\Debug\net6.0-windows\national-statistics.genruntimeconfig.cache
