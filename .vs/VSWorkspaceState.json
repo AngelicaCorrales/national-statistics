@@ -4,8 +4,11 @@
     "\\data",
     "\\docs",
     "\\national-statistics",
-    "\\national-statistics\\bin"
+    "\\national-statistics\\bin",
+    "\\national-statistics\\src",
+    "\\national-statistics\\src\\model",
+    "\\national-statistics\\src\\ui"
   ],
-  "SelectedNode": "\\national-statistics\\MainWindow.xaml",
+  "SelectedNode": "\\national-statistics\\src\\ui\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }

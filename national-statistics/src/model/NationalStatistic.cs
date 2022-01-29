@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace national_statistics.src.model
 {
-    public class NationalStatistics {
+    public class NationalStatistic {
 
         //Constant
         private static string SEPARATOR = ",";
@@ -16,15 +16,37 @@ namespace national_statistics.src.model
         private List<Department> departments;
     
         //Builder method
-        public NationalStatistics()
+        public NationalStatistic()
         {
             departments = new List<Department>();
         }
 
-        public importFile()
+        public List<Department> getDepartments()
         {
-            
+            return departments;
         }
+
+        /*
+        public void importFile(string fileName)
+        {
+            using (StreamReader rd = new StreamReader(fileName))
+            {
+                rd.ReadLine();
+                while (!rd.EndOfStream)
+                {
+                    string[] parts = rd.ReadLine().Split(SEPARATOR);
+                    if (!foundDepartment(parts[0]))
+                    {
+                        departments.Add(new Department(parts[0], parts[2]));
+                        if (!departments.Last().foundMunicipality(parts[1]))
+                        {
+                            departments.Last().getMunicipalities().Add(new Municipality(parts[1], parts[3], parts[4]));
+                        }
+                    }
+                }
+
+            }
+        }*/
 
         private Boolean foundDepartment(string code)
         {

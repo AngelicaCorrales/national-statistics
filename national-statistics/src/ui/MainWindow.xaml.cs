@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
+using LiveCharts;
+using LiveCharts.Wpf;
 using national_statistics.src.model;
 
 namespace national_statistics
@@ -22,12 +25,12 @@ namespace national_statistics
     public partial class MainWindow : Window
     {
         //Relationships
-        private NationalStatistics nationalS;
+        private NationalStatistic nationalS;
 
         public MainWindow()
         {
             InitializeComponent();
-            nationalS = new NationalStatistics();
+            nationalS = new NationalStatistic();
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -43,7 +46,7 @@ namespace national_statistics
         public void createGraphic()
         {
             SeriesCollection series = new();
-            foreach (Department dep in nationalS.Departments)
+            foreach (Department dep in nationalS.getDepartments())
             {
                 series.Add(new PieSeries()
                 {
