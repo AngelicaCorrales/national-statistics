@@ -26,34 +26,13 @@ namespace national_statistics.src.model
             return departments;
         }
 
-        /*
-        public void importFile(string fileName)
-        {
-            using (StreamReader rd = new StreamReader(fileName))
-            {
-                rd.ReadLine();
-                while (!rd.EndOfStream)
-                {
-                    string[] parts = rd.ReadLine().Split(SEPARATOR);
-                    if (!foundDepartment(parts[0]))
-                    {
-                        departments.Add(new Department(parts[0], parts[2]));
-                        if (!departments.Last().foundMunicipality(parts[1]))
-                        {
-                            departments.Last().getMunicipalities().Add(new Municipality(parts[1], parts[3], parts[4]));
-                        }
-                    }
-                }
-
-            }
-        }*/
-
         public void importFile(string file)
         {
 
             StreamReader streamReader = new StreamReader(file);
             string line;
             string[] parts;
+            streamReader.ReadLine();
             while ((line = streamReader.ReadLine()) != null)
             {
 
@@ -99,9 +78,9 @@ namespace national_statistics.src.model
         public DataTable fillTable()
         {
             DataTable dt = new DataTable();
-            dt.Columns.Add("Codigo del Dept.");
+            dt.Columns.Add("Codigo del Dept");
             dt.Columns.Add("Codigo del Municipio");
-            dt.Columns.Add("Nombre del Dept.");
+            dt.Columns.Add("Nombre del Dept");
             dt.Columns.Add("Nombre del Municipio");
             dt.Columns.Add("Tipo");
             foreach(Department department in departments)

@@ -68,8 +68,7 @@ namespace national_statistics
             if(d.ShowDialog() == true && d.CheckFileExists == true)
             {
                 nationalS.importFile(d.FileName);
-                DataTable dt = new DataTable();
-                dt = nationalS.fillTable();
+                DataTable dt = nationalS.fillTable();
                 dataGrid.ItemsSource = dt.DefaultView;
             }
         }
