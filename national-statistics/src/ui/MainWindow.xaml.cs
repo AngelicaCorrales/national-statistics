@@ -42,10 +42,7 @@ namespace national_statistics
 
         }
 
-        private void ButtonCreateGraphic_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
 
         public void createGraphic()
         {
@@ -59,7 +56,7 @@ namespace national_statistics
                     DataLabels = true,
                 });
             }
-            //pieChart.Series = series;
+            pieChart.Series = series;
 
         }
 
@@ -71,8 +68,15 @@ namespace national_statistics
             if (d.ShowDialog() == true && d.CheckFileExists == true)
             {
                 nationalS.importFile(d.FileName);
+<<<<<<< HEAD
                 dataTable = nationalS.fillTable(nationalS.getDepartments());
                 dataGrid.ItemsSource = dataTable.DefaultView;
+=======
+                DataTable dt = nationalS.fillTable();
+                dataGrid.ItemsSource = dt.DefaultView;
+
+                createGraphic();
+>>>>>>> d669776613064f62da96ff49a951da2342e174fb
             }
         }
 
