@@ -20,42 +20,24 @@ namespace national_statistics.src.model
         {
             departments = new List<Department>();
         }
-
         public List<Department> getDepartments()
         {
             return departments;
         }
 
-        /*
-        public void importFile(string fileName)
+        public importFile()
         {
-            using (StreamReader rd = new StreamReader(fileName))
-            {
-                rd.ReadLine();
-                while (!rd.EndOfStream)
-                {
-                    string[] parts = rd.ReadLine().Split(SEPARATOR);
-                    if (!foundDepartment(parts[0]))
-                    {
-                        departments.Add(new Department(parts[0], parts[2]));
-                        if (!departments.Last().foundMunicipality(parts[1]))
-                        {
-                            departments.Last().getMunicipalities().Add(new Municipality(parts[1], parts[3], parts[4]));
-                        }
-                    }
-                }
+            
+        }
 
-            }
-        }*/
-
-        private Boolean foundDepartment(string code)
+        private Department foundDepartment(string code)
         {
-            Boolean result = false;
-            for (int i = 0; i < departments.Count; i++)
+            Department result = null;
+            for (int i = 0; i < departments.Count && result==null; i++)
             {
                 if (departments.ElementAt(i).getCode().Equals(code))
                 {
-                    result = true;
+                    result = departments.ElementAt(i);
                 }
             }
             return result;

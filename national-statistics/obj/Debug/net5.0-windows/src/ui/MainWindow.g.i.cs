@@ -42,6 +42,14 @@ namespace national_statistics {
     /// </summary>
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 33 "..\..\..\..\..\src\ui\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal LiveCharts.Wpf.PieChart pieChart;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -87,6 +95,9 @@ namespace national_statistics {
             
             #line default
             #line hidden
+            return;
+            case 3:
+            this.pieChart = ((LiveCharts.Wpf.PieChart)(target));
             return;
             }
             this._contentLoaded = true;
