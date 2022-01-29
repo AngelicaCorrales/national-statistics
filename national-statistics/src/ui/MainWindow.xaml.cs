@@ -24,7 +24,12 @@ namespace national_statistics
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
+
+        
     {
+        //Attributes
+        private DataTable dataTable;
+
         //Relationships
         private NationalStatistic nationalS;
 
@@ -32,10 +37,8 @@ namespace national_statistics
         {
             InitializeComponent();
             nationalS = new NationalStatistic();
-        }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+            dataTable = new DataTable();
+            displayLettersInCbx();
 
         }
 
@@ -62,14 +65,27 @@ namespace national_statistics
             OpenFileDialog d = new OpenFileDialog();
             d.Title = "Import Data";
             d.Filter = "CSV files | *.csv;";
-            if(d.ShowDialog() == true && d.CheckFileExists == true)
+            if (d.ShowDialog() == true && d.CheckFileExists == true)
             {
                 nationalS.importFile(d.FileName);
-                DataTable dt = nationalS.fillTable();
-                dataGrid.ItemsSource = dt.DefaultView;
-
+                dataTable = nationalS.fillTable(nationalS.getDepartments());
+                dataGrid.ItemsSource = dataTable.DefaultView;
+                dataGrid.GridLinesVisibility = DataGridGridLinesVisibility.All;
                 createGraphic();
             }
+        }
+
+        private void displayLettersInCbx()
+        {
+            char[] letters = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+            cbx.ItemsSource = letters;
+        }
+
+        private void cbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            List<Department> results = nationalS.filterDepartments(char.Parse(cbx.SelectedValue.ToString()));
+            dataTable = nationalS.fillTable(results);
+            dataGrid.ItemsSource = dataTable.DefaultView;
         }
     }
 }

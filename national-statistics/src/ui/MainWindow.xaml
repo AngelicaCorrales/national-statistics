@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:national_statistics"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
-        Title="National statistics" Height="562" Width="1310">
+        Title="National statistics" Height="562" Width="1310" Background="#FFEACECE">
     <Grid RenderTransformOrigin="0.499,0.495">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="141*"/>
@@ -23,18 +23,32 @@
             </TransformGroup>
         </Grid.RenderTransform>
         <Grid Margin="10,10,4,10" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="319*"/>
+                <RowDefinition Height="53*"/>
+                <RowDefinition Height="155*"/>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="382*"/>
+                <ColumnDefinition Width="204*"/>
+                <ColumnDefinition Width="59*"/>
+                <ColumnDefinition Width="644*"/>
             </Grid.ColumnDefinitions>
-            <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged" Margin="20,50,20,20">
+            <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,50,20,20" IsReadOnly="True" Grid.ColumnSpan="3" Grid.RowSpan="3">
                 <DataGrid.Style>
                     <Style/>
                 </DataGrid.Style>
             </DataGrid>
-            <ComboBox HorizontalAlignment="Left" Margin="233,9,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.509,0.498"/>
-            <Button Content="Importar datos" HorizontalAlignment="Left" Margin="42,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.208,-0.136" Click="ButtonImportData_Click"/>
-            <Grid Grid.Column="1" Margin="0">
+            <ComboBox x:Name="cbx" HorizontalAlignment="Left" Margin="322,13,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.509,0.498" SelectionChanged="cbx_SelectionChanged" Height="22" Grid.ColumnSpan="2">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFDC8D8D" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+            </ComboBox>
+            <Button Content="Importar datos" HorizontalAlignment="Left" Margin="184,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.208,-0.136" Click="ButtonImportData_Click" Width="100" Height="25" Background="#FFF7A2A2"/>
+            <Grid Grid.Column="3" Grid.RowSpan="3">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>

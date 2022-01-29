@@ -67,15 +67,16 @@ namespace national_statistics.src.model
             List < Department > results = new List < Department >();
             for (int i = 0; i < departments.Count; i++)
             {
-                if(departments.ElementAt(i).getName().Substring(0,1).Equals(letter))
+                char[] name = departments.ElementAt(i).getName().ToCharArray();
+                if (name[0]==letter)
                 {
-                    results.Add(results.ElementAt(i));
+                    results.Add(departments.ElementAt(i));
                 }
             }
             return results;
         }
 
-        public DataTable fillTable()
+        public DataTable fillTable(List<Department> d)
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("Codigo del Dept");
@@ -83,12 +84,13 @@ namespace national_statistics.src.model
             dt.Columns.Add("Nombre del Dept");
             dt.Columns.Add("Nombre del Municipio");
             dt.Columns.Add("Tipo");
-            foreach(Department department in departments)
+            foreach(Department department in d)
             {
                 for (int i = 0;i < department.getMunicipalities().Count; i++)
                 {
                     dt.Rows.Add(department.getCode(), department.getMunicipalities().ElementAt(i).getCode(), department.getName(), department.getMunicipalities().ElementAt(i).getName(), department.getMunicipalities().ElementAt(i).getType());
                 } 
+
             }
 
             return dt;
