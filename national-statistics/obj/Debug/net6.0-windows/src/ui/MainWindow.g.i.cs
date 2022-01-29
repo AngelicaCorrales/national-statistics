@@ -62,7 +62,7 @@ namespace national_statistics {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/national-statistics;component/src/ui/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/national-statistics;V1.0.0.0;component/src/ui/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\src\ui\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

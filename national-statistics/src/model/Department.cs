@@ -16,7 +16,7 @@ namespace national_statistics.src.model
         {
             this.code = code;
             this.name = name;
-            municipalities= new();
+            municipalities= new List<Municipality>();
         }
 
         public string getCode()
