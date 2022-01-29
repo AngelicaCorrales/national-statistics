@@ -55,7 +55,7 @@ namespace national_statistics
                     DataLabels = true,
                 });
             }
-            pieChart.Series = series;
+            //pieChart.Series = series;
 
         }
 

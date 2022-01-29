@@ -30,7 +30,7 @@
             <ComboBox HorizontalAlignment="Left" Margin="233,9,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.509,0.498"/>
             <Button Content="Importar datos" HorizontalAlignment="Left" Margin="42,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.208,-0.136"/>
             <Canvas Grid.Column="1" Margin="20,50,20,20">
-               <lvc:PieChart x:Name="pieChart"></lvc:PieChart>
+              
             </Canvas>
 
         </Grid>
