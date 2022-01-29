@@ -25,9 +25,48 @@ namespace national_statistics.src.model
             return departments;
         }
 
-        public importFile()
+        /*
+        public void importFile(string fileName)
         {
-            
+            using (StreamReader rd = new StreamReader(fileName))
+            {
+                rd.ReadLine();
+                while (!rd.EndOfStream)
+                {
+                    string[] parts = rd.ReadLine().Split(SEPARATOR);
+                    if (!foundDepartment(parts[0]))
+                    {
+                        departments.Add(new Department(parts[0], parts[2]));
+                        if (!departments.Last().foundMunicipality(parts[1]))
+                        {
+                            departments.Last().getMunicipalities().Add(new Municipality(parts[1], parts[3], parts[4]));
+                        }
+                    }
+                }
+
+            }
+        }*/
+
+        public void importFile(string file)
+        {
+
+            StreamReader streamReader = new StreamReader(file);
+            string line;
+            string[] parts;
+            while ((line = streamReader.ReadLine()) != null)
+            {
+
+                parts = line.Split(SEPARATOR);
+
+                Department dep = foundDepartment(parts[0]);
+                if (dep == null)
+                {
+                    departments.Add(new Department(parts[0], parts[2]));
+                    dep = departments.ElementAt(departments.Count - 1);
+                }
+                dep.getMunicipalities().Add(new Municipality(parts[1], parts[3], parts[4]));
+
+            }
         }
 
         private Department foundDepartment(string code)
