@@ -90,6 +90,7 @@ namespace national_statistics.src.model
                 {
                     dt.Rows.Add(department.getCode(), department.getMunicipalities().ElementAt(i).getCode(), department.getName(), department.getMunicipalities().ElementAt(i).getName(), department.getMunicipalities().ElementAt(i).getType());
                 } 
+
             }
 
             return dt;

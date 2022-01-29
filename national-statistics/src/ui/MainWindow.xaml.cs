@@ -38,7 +38,7 @@ namespace national_statistics
             InitializeComponent();
             nationalS = new NationalStatistic();
             dataTable = new DataTable();
-            displayLettersUInCbx();
+            displayLettersInCbx();
 
         }
 
@@ -68,19 +68,14 @@ namespace national_statistics
             if (d.ShowDialog() == true && d.CheckFileExists == true)
             {
                 nationalS.importFile(d.FileName);
-<<<<<<< HEAD
                 dataTable = nationalS.fillTable(nationalS.getDepartments());
                 dataGrid.ItemsSource = dataTable.DefaultView;
-=======
-                DataTable dt = nationalS.fillTable();
-                dataGrid.ItemsSource = dt.DefaultView;
-
+                dataGrid.GridLinesVisibility = DataGridGridLinesVisibility.All;
                 createGraphic();
->>>>>>> d669776613064f62da96ff49a951da2342e174fb
             }
         }
 
-        private void displayLettersUInCbx()
+        private void displayLettersInCbx()
         {
             char[] letters = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
             cbx.ItemsSource = letters;
